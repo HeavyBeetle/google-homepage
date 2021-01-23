@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+    <main>
+    <head>
+      <style>
+
+        html, body {
+          height: 100%;
+          margin:0px;
+          font-family: Helvetica, sans-serif;
+        }
+
+        input[type=text]{
+          border: 1px solid #d3d3d3;
+          border-radius:20px;
+          width: 500px;
+          height: 40px;
+        
+        }
+        .body-flex {
+          display: flex;
+          flex-direction: column;
+          min-height: 85vh;
+
+        }
+
+
+        .buttons {
+          background-color: rgba(248, 249, 250);
+          border: none;
+          color: rgb(92, 91, 91);
+          padding: 13px 18px;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+          font-size: 14px;
+        
+        }
+        .sign-in {
+          background-color: #4285F4 ;
+          border: none;
+          color: white;
+          padding: 8px 10px;
+          text-align: center;
+          text-decoration: none;
+          font-size: 14px;
+          font-weight:500;
+        }
+        .test-border {
+          border:1px solid white;
+        } 
+    
+        .center-flex {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          row-gap:30px;
+          flex:1;
+        } 
+        .header-flex {
+          display:flex;
+          flex-direction:row;
+          column-gap:30px;
+          padding: 20px 20px;
+          align-items: center;
+          font-size: 13px;
+          color: rgb(73, 73, 73);
+          
+        }
+
+        .footer-flex {
+          display:flex;
+          flex-direction:row;
+          column-gap:30px;
+          padding: 20px 20px;
+          align-items: center;
+          font-size: 13px;
+          background-color: rgba(248, 249, 250);
+          color: rgb(73, 73, 73);
+          flex-shrink: 0;
+        
+          
+        }
+        
+      </style>
+        <title>Goggle</title>
+        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body class="body-flex test-border">
+
+
+<!--top-->
+      <div class="header-flex">
+        <div>About</div>
+        <div style="flex-grow:1">Store</div>
+        <div>Gmail</div>
+        <div>Images</div>
+        <div>Squares</div>
+        <div><button type="submit" class="sign-in"> Sign in </button> </div>
+      </div>
+
+<!--middle-->
+      <div class="center-flex body-flex">
+        <div><img src= "https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="It says Google"></div>
+        <div> <i class="fa fa-search" aria-hidden="true"></i><input type="text"></div>
+        <div><button type="submit" class="buttons"> Goggle Search</button> <button type="button" class="buttons"> I'm Feeling Lucy</button></div>
+      </div>
+
+<!--bottom-->
+      <footer class="footer-flex">
+        <div>Advertising</div>
+        <div>Business</div>
+        <div style="flex-grow:1">How to look</div>
+        <div>Privacy</div>
+        <div>Terms</div>
+        <div>Settings</div>
+      </footer>
+    </body>
+</main>
+</html>
